@@ -20,7 +20,7 @@ const Header = ({ language, onLanguageChange }: HeaderProps) => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-soft">
       <div className="section-container py-3 flex items-center justify-between">
-        <img src={logoImage} alt="Tofo Rides Logo" className="h-12 w-12 md:h-14 md:w-14" />
+        <img src={logoImage} alt="Tofo Rides with Jorge Logo" className="h-16 w-auto md:h-20 md:w-auto" />
         
         <div className="flex items-center gap-2">
           <Button
