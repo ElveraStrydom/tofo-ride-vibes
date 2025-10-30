@@ -27,7 +27,7 @@ const Hero = ({
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
       </div>
 
-      <div className="relative section-container text-center z-10 py-12 text-slate-500">
+      <div className="relative section-container text-center z-10 py-[8px] text-slate-600">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-foreground animate-fade-in">
           {t.headline}
         </h1>
