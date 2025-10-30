@@ -1,33 +1,29 @@
 import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/tofo-beach-hero.jpg";
-
 interface HeroProps {
   language: "en" | "pt";
 }
-
-const Hero = ({ language }: HeroProps) => {
+const Hero = ({
+  language
+}: HeroProps) => {
   const content = {
     en: {
       headline: "Book Your Ride with Jorge",
-      subheadline: "Your Reliable, Friendly Ride Through Mozambique's Coast",
-      cta: "WhatsApp Jorge Now",
+      subheadline: "Your friendly and reliable local driver in Tofo, Mozambique",
+      cta: "WhatsApp Jorge Now"
     },
     pt: {
       headline: "Reserve Seu Transporte com Jorge",
-      subheadline: "Seu Transporte Confiável e Amigável pela Costa de Moçambique",
-      cta: "Fale com Jorge no WhatsApp",
-    },
+      subheadline: "Seu motorista local confiável e amigável em Tofo, Moçambique",
+      cta: "Fale com Jorge no WhatsApp"
+    }
   };
-
   const t = content[language];
-
-  return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20">
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
+  return <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20">
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url(${heroImage})`
+    }}>
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
       </div>
 
@@ -35,27 +31,16 @@ const Hero = ({ language }: HeroProps) => {
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-foreground animate-fade-in">
           {t.headline}
         </h1>
-        <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in">
+        <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in font-medium">
           {t.subheadline}
         </p>
-        <Button
-          variant="whatsapp"
-          size="xl"
-          asChild
-          className="animate-scale-in"
-        >
-          <a
-            href="https://wa.me/+258860163745"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        <Button variant="whatsapp" size="xl" asChild className="animate-scale-in">
+          <a href="https://wa.me/+258860163745" target="_blank" rel="noopener noreferrer">
             <MessageCircle className="h-6 w-6" />
             {t.cta}
           </a>
         </Button>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
