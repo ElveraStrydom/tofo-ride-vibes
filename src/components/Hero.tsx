@@ -10,12 +10,12 @@ const Hero = ({ language }: HeroProps) => {
   const content = {
     en: {
       headline: "Book Your Ride with Jorge",
-      subheadline: "Your friendly and reliable local driver in Tofo, Mozambique",
+      subheadline: "Your Reliable, Friendly Ride Through Mozambique's Coast",
       cta: "WhatsApp Jorge Now",
     },
     pt: {
       headline: "Reserve Seu Transporte com Jorge",
-      subheadline: "Seu motorista local confiável e amigável em Tofo, Moçambique",
+      subheadline: "Seu Transporte Confiável e Amigável pela Costa de Moçambique",
       cta: "Fale com Jorge no WhatsApp",
     },
   };
