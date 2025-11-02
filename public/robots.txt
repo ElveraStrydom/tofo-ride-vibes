@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://tofo-rides.com/sitemap.xml
+Sitemap: https://tofotaxi.livo.africa/sitemap.xml
 
 # Crawl delay
 Crawl-delay: 0
