@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -17,6 +18,7 @@ const Index = () => {
       <About language={language} />
       <Services language={language} />
       <Testimonials language={language} />
+      <FAQ language={language} />
       <Contact language={language} />
       <Footer language={language} />
     </div>
