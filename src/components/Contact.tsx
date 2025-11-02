@@ -1,4 +1,4 @@
-import { MessageCircle, MapPin, Phone } from "lucide-react";
+import { MessageCircle, MapPin, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface ContactProps {
@@ -13,6 +13,7 @@ const Contact = ({ language }: ContactProps) => {
       cta: "Message on WhatsApp",
       location: "Based in Tofo, Mozambique",
       phone: "+258 860 163 745",
+      email: "jorgerofino77@gmail.com",
     },
     pt: {
       heading: "Entre em Contato",
@@ -20,6 +21,7 @@ const Contact = ({ language }: ContactProps) => {
       cta: "Mensagem no WhatsApp",
       location: "Sediado em Tofo, Moçambique",
       phone: "+258 860 163 745",
+      email: "jorgerofino77@gmail.com",
     },
   };
 
@@ -44,6 +46,10 @@ const Contact = ({ language }: ContactProps) => {
             <div className="flex items-center gap-2 text-muted-foreground">
               <Phone className="h-5 w-5 text-primary" />
               <span>{t.phone}</span>
+            </div>
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <Mail className="h-5 w-5 text-primary" />
+              <span>{t.email}</span>
             </div>
           </div>
 
